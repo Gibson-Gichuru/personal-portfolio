@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% block tittle %} | Gibson {% endblock %}
+
+{% block body %}
+
+<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+<!--header-->
+
+{% block header %}
+    {% include 'main/_header.html'%}
+{% endblock header%}
+
+<!--End Of Header Section-->
+
+
+<!--Hero Section -->>
+{% block hero %}
+    {% include 'main/_hero.html'%}
+{% endblock hero %}
+
+<!--End Of hero Section-->
+
+
+<!--Main Part Of the Website-->
+{% block main %}
+    {% include 'main/_main.html'%}
+{% endblock main%}
+
+<!--End Of main part Of the Website-->
+
+<!--Footer Section-->
+{% block footer %}
+    {% include 'main/_footer.html'%}
+{% endblock footer%}
+
+<!--End of Footer Section-->
+{% endblock  body %}

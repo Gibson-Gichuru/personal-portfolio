@@ -1,6 +1,10 @@
-
+import  os
 
 class Config:
+
+    SSL_DISABLE = True
+    DEBUG = True
+    SECRET_KEY = os.environ.get("SECRET_KEY")
     
     @staticmethod
     def init_app(app):
