@@ -1,46 +1,52 @@
-<section id="portfolio" class="portfolio section-bg">
-<div class="container">
+<section id="portfolio" class="portfolio">
+    <div class="container">
 
-    <div class="section-title">
-    <h2>Portfolio</h2>
-    <p>Below are some of the Projects i have worked on.</p>
-    </div>
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
 
-    <div class="row" data-aos="fade-up">
-    <div class="col-lg-12 d-flex justify-content-center">
-        <ul id="portfolio-flters">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-app">Programing Concepts</li>
-        <li data-filter=".filter-web">Web</li>
-        </ul>
-    </div>
-    </div>
-
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail2.png?alt=media&token=5b87a9bd-2a3c-4807-b95e-9493cc5d7e57" class="img-fluid" alt="">
-        <div class="portfolio-links">
-            <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail2.png?alt=media&token=5b87a9bd-2a3c-4807-b95e-9493cc5d7e57" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="{{ url_for('main.project_details')}}" title="More Details"><i class="bx bx-link"></i></a>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Apps</li>
+            <li data-filter=".filter-card">Blog</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
         </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_meme1.png?alt=media&token=78c3c7bc-b993-4552-ae7f-941e1725e82e" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_meme.png?alt=media&token=d4dba8fb-53ee-459f-9bd6-20209cf26b3d" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('main.project_details')}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail.png?alt=media&token=701ec790-f3d6-4c9c-acbf-21a51c76f626" class="img-fluid" alt="">
-        <div class="portfolio-links">
-            <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail.png?alt=media&token=701ec790-f3d6-4c9c-acbf-21a51c76f626" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="{{ url_for('main.project_details')}}" title="More Details"><i class="bx bx-link"></i></a>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail2.png?alt=media&token=a2108cbe-f463-4336-beef-40a24d71472d" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail2.png?alt=media&token=a2108cbe-f463-4336-beef-40a24d71472d" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('main.project_details')}}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-
-    
+      </div>
 
     </div>
-
-</div>
-</section>
+  </section>

@@ -1,38 +1,30 @@
 {% extends 'base.html'%}
-{% block tittle %} | Gibson {% endblock %}
 
-{% block body %}
+{% block tittle%} | Gibson Gichuru{% endblock tittle%}
 
-<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+{% block content %}
 
-<!--header-->
+    {% block header %}
+        {% include '/main/_header.html'%}
+    {% endblock header%}
 
-{% block header %}
-    {% include 'main/_header.html'%}
-{% endblock header%}
+    {% block about %}
+        {% include "/main/_about.html"%}
+    {% endblock about%}
 
-<!--End Of Header Section-->
+    {% block resume %}
 
+        {% include "/main/_resume.html"%}
 
-<!--Hero Section -->>
-{% block hero %}
-    {% include 'main/_hero.html'%}
-{% endblock hero %}
+    {% endblock resume %}
 
-<!--End Of hero Section-->
+    {% block portfolio %}
+        {% include "/main/_portfolio.html"%}
+    {% endblock %}
 
+    {% block contacts %}
 
-<!--Main Part Of the Website-->
-{% block main %}
-    {% include 'main/_main.html'%}
-{% endblock main%}
-
-<!--End Of main part Of the Website-->
-
-<!--Footer Section-->
-{% block footer %}
-    {% include 'main/_footer.html'%}
-{% endblock footer%}
-
-<!--End of Footer Section-->
-{% endblock  body %}
+        {% include "/main/_contacts.html"%}
+    {% endblock %}
+    
+{% endblock content%}

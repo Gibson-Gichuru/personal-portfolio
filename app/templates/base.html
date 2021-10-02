@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
 
-<head>
-    <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>{% block tittle %} | Gibson{% endblock tittle%}</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  
-  <title>| {% block title %}Gibson Gichuru{% endblock %}</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/favicon.png?alt=media&token=526f8288-998b-466d-9dda-3846eb667260" rel="icon">
-  <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/apple-touch-icon.png?alt=media&token=93beaf70-f33d-4763-b2bc-559303436375" rel="apple-touch-icon">
+        <!--Favicons-->
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/favicon.png?alt=media&token=3380ed96-caa2-497c-a42a-5aaf08ef322c" rel="icon">
+        <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/apple-touch-icon.png?alt=media&token=331bf832-827b-4e90-a680-7710a8407fa6" rel="apple-touch-icon">
 
-  <!--Bootstap css-->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 
-    <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/icofont.min.css?alt=media&token=1b0ef03f-5597-4578-bc2a-34f883614c08" rel="stylesheet">
-    <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/boxicons.min.css?alt=media&token=00e915c7-f53f-4db2-a49d-2c5ab5c40520" rel="stylesheet">
-    <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/venobox.css?alt=media&token=bb907e91-8b58-42bb-8432-81ddff6c0fe3" rel="stylesheet">
-    <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/owl.carousel.min.js?alt=media&token=240235cf-6162-4dec-9bc5-21aa6c14f118" rel="stylesheet">
-    <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/aos.css?alt=media&token=37f9bcfd-b52c-4b53-b0bf-7d150c6380a3" rel="stylesheet">
-    <!--Custom css-->
-        <link href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/style.css?alt=media&token=205bcb4d-6f86-4a6e-9995-62239b9c3c78" rel="stylesheet">
+        <!--Vender Css Files-->
 
-</head>
+        <!--Bootstap Css-->
 
-<body>
-    {% block body %}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    {% endblock %}
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!--Import js-->
+         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/jquery.min.js?alt=media&token=eacb4a24-e089-49cd-b555-5c47ea1d81de"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/validate.js?alt=media&token=f60c01a3-950f-47a1-8d7d-5457aee79087"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/jquery.waypoints.min.js?alt=media&token=94d6f60b-fccb-46ca-a261-66a1fff24c13"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/counterup.min.js?alt=media&token=ee01b1f2-f7b7-4118-a3b6-acd3d7994055"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/isotope.pkgd.min.js?alt=media&token=480b14ef-8eee-4655-8afa-e730dc7cfa6b"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/venobox.min.js?alt=media&token=fb1b6d79-12ac-4d98-abd1-f27a2250f6bf"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/owl.carousel.min.js?alt=media&token=bfd29a61-3611-4546-9d3b-7e62ab25f75a"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/typed.min.js?alt=media&token=1a6ddb7a-f15f-4cca-8da9-8c9e2d4c4bd9"></script>
-        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/aos.js?alt=media&token=fd14373e-88d2-4250-9f77-740b58131fad"></script>
+        <!--Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <!-- custom js -->
-    <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/main.js?alt=media&token=ae9326a9-7f02-4a3e-b88d-b5da9b37af96"></script>
+        <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/style.css?alt=media&token=8c828d31-fbfc-4860-bada-788ffdc0cbb7">
 
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </head>
 
-    
-</body>
+    <body>
 
+        {% block content %}
+
+
+
+        {% endblock content%}
+        
+
+
+        <!--JavaScript Cdn Imports-->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js" 
+        integrity="sha512-lzIDzaYCox5oeC0ymj6ho5fRdMrCYkhHfVEm3fySZStdwG85y9SxTcIFYYEUiW1KYbkfiInVFkGofRlYlkHgLw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+         integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <script src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/main.js?alt=media&token=07189e7e-3ab1-4f44-b722-70bba4aa4456"></script>
+    </body>
 </html>

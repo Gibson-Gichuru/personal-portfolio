@@ -1,27 +1,27 @@
 <header id="header">
-<div class="d-flex flex-column">
+    <div class="container">
 
-    <div class="profile">
-    <img src="{{ url_for('static', filename = 'images/profile-img.jpg')}}" alt="" class="img-fluid rounded-circle">
-    <h1 class="text-light"><a href="{{ url_for('main.home')}}">Gibson Gichuru</a></h1>
-    <div class="social-links mt-3 text-center">
-        <a href="https://twitter.com/Gibson_Gichuru" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/gibson-gichuru-318389206/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <h1><a href="{{ url_for('main.home')}}">Gibson Gichuru</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>I'm a passionate <span>Software Engineer</span> from Nyeri (Kenya)</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://twitter.com/Gibson_Gichuru"" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/gibson-gichuru-318389206/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
     </div>
-    </div>
-
-    <nav class="nav-menu">
-    <ul>
-        <li class="active"><a href="{{ url_for('main.home')}}"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
-    </ul>
-    </nav><!-- .nav-menu -->
-    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-</div>
-</header>
+  </header>
