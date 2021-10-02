@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/profile-img.jpeg?alt=media&token=14686f42-314f-45a5-8586-d95b69d8ae6a") top center;
   background-size: cover;
 }
 

@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{% block tittle %} | Project details {% endblock tittle %}
+
+{% block body %}
+<main id="main">
+<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+{% block header %}
+    {% include 'main/_header.html'%}
+{% endblock header%}
+
+{% block breadcrumbs %}
+<section id="breadcrumbs" class="breadcrumbs">
+<div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+    <h2>Project Details</h2>
+    <ol>
+        <li><a href="{{ url_for('main.home')}}">Home</a></li>
+        <li>Portfoio Details</li>
+    </ol>
+    </div>
+
+</div>
+</section>
+
+{% endblock breadcrumbs%}
+
+{% block portfolio %}
+<section id="portfolio-details" class="portfolio-details">
+<div class="container">
+
+    <div class="portfolio-details-container">
+
+    <div class="owl-carousel portfolio-details-carousel">
+        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_meme.png?alt=media&token=458be694-e9bb-4b3c-9afc-789b118d266e" class="img-fluid" alt="">
+        <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-31bba.appspot.com/o/project_retail2.png?alt=media&token=5b87a9bd-2a3c-4807-b95e-9493cc5d7e57" class="img-fluid" alt="">
+        <img src="assets/img/portfolio-details-3.jpg" class="img-fluid" alt="">
+    </div>
+
+    <div class="portfolio-info">
+        <h3>Project information</h3>
+        <ul>
+        <li><strong>Category</strong>: Web design</li>
+        <li><strong>Client</strong>: ASU Company</li>
+        <li><strong>Project date</strong>: 01 March, 2020</li>
+        <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="portfolio-description">
+    <h2>This is an example of portfolio detail</h2>
+    <p>
+        Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+    </p>
+    </div>
+
+</div>
+</section>
+{% endblock portfolio%}
+</main>
+{% endblock body %}
